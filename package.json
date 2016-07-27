@@ -1,0 +1,19 @@
+{
+  "name": "randomthoughtgen",
+  "version": "0.1.0",
+  "main": "randomThoughtGen.js",
+  "scripts": {
+    "build": "browserify randomThoughtGen.js -o bundle.js",
+    "watch": "watchify randomThoughtGen.js -o bundle.js"
+  },
+  "author": "Nikhil Nair",
+  "license": "MIT",
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "browserify": "^13.0.1",
+    "cls-bluebird": "^1.1.3",
+    "watchify": "^3.7.0",
+    "harmony": "^0.0.1"
+  },
+  "description": ""
+}

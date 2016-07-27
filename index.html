@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link href="css/style.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.container {
+			height: 100vh;
+			width: 100vw;
+		}
+		#data {
+			position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		font-family: Papyrus;
+    		font-size: 1.5em;
+		}
+		
+		#clickMe {
+			position: relative;
+			left: 90%;
+			top: 5%;
+		}
+
+		#fb-share {
+			position: absolute;
+			/*top: 60%;*/ 
+			display: none;
+    		left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		.glyphicon.glyphicon-repeat {
+			font-size: 3em;
+			top: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- CONTAINER -->
+	<div class="container" id="container">
+		
+		<a id="clickMe" href="#">
+			<span class="glyphicon glyphicon-repeat" style="color: white"></span>
+		</a>
+
+		<div class="row" id="data">
+			<p>sample thought</p>		<!-- I'M EMPTY INSIDE -->
+		</div>
+		
+		<div class="row" id="fb-share">
+			<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+
+	</div>
+	<!-- /CONTAINER -->
+	<script src="bundle.js"></script>
+
+</body>
+</html>
